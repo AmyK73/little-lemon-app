@@ -1,18 +1,14 @@
 import React from "react";
 
-function Nav() {
+export default function Nav() {
     return (
-        <Nav>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="About.html">About</a></li>
-                <li><a href="Menu.html">Menu</a></li>
-                <li><a href="Reservations.html">Reservations</a></li>
-                <li><a href="Order.html">Order Online</a></li>
-                <li><a href="Login.html">Login</a></li>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="reservations.html">Reservations</a></li>
+                <li><a href="order.html">Order Online</a></li>
+                <li><a href="login.html">Login</a></li>
             </ul>
-        </Nav>
     );
-};
-
-export default Nav;
+}

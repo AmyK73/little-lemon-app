@@ -1,13 +1,7 @@
 import React from 'react';
-import { Icon } from '@iconify/react';
 
-function Header() {
+export default function Header() {
     return (
-        <>
-        <Header />
-        <Icon icon="emojione:lemon" />
-        </>
+        <img src="littlelemonlogo.png" alt="lemon" width="50" height="50"></img>
     );
-};
-
-export default Header;
+}
