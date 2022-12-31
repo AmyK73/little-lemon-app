@@ -2,7 +2,8 @@ import React from "react";
 
 export default function Footer() {
     return (
-            <>
+    <>
+    <h4>doormat navigation</h4>
             <ul>
             <li><a href="home.html">Home</a></li>
             <li><a href="about.html">About</a></li>
@@ -11,16 +12,18 @@ export default function Footer() {
             <li><a href="order.html">Order Online</a></li>
             <li><a href="login.html">Login</a></li>
         </ul>
+            <h4>Contacts</h4>
         <ul>
                 <li><a href="address.html">Address</a></li>
                 <li><a href="phone.html">Phone Number</a></li>
                 <li><a href="email.html">Email</a></li>
-            </ul>
-            <ul>
+        </ul>
+            <h4>Social Media Links</h4>
+        <ul>
                 <li><a href="address.html">Address</a></li>
                 <li><a href="phone.html">Phone Number</a></li>
                 <li><a href="email.html">Email</a></li>
-            </ul>
-            </>
+        </ul>
+    </>
     );
 }

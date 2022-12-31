@@ -1,11 +1,13 @@
 import React from "react";
 
-function Main () {
+export default function Main() {
     return(
-        <Main hi />
+        <>
+        <h1>Little Lemon</h1>
+        <h2>Chicago</h2>
+        <section>We are a family owned Mediterranean restaurant, focused on traditional recipes served with a modern twist.</section>
+        <button>Reserve a Table</button>
+        </>
 
     );
-};
-
-
-export default Main;
+}
