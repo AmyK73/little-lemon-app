@@ -3,15 +3,18 @@ import Header from './components/Header';
 import Nav from './components/Nav';
 import Main from './components/Main';
 import Footer from './components/Footer';
-import './App.css';
+import { ChakraProvider } from '@chakra-ui/react';
+//import './Styles.css';
 
-export default function App() {
+function App() {
   return (
-    <div>
+    <ChakraProvider>
     <Header />
-    <Nav />
     <Main />
     <Footer />
-    </div>
-  );
+    </ChakraProvider>
+  )
 }
+
+
+export default App;
