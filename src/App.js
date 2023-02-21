@@ -5,6 +5,8 @@ import Main from './components/Main';
 import Footer from './components/Footer';
 import { ChakraProvider } from '@chakra-ui/react';
 import CustomersSay from './components/CustomersSay';
+import AboutUs from './components/AboutUs';
+import BookingPage from './Pages/BookingPage';
 //import './Styles.css';
 
 
@@ -14,7 +16,9 @@ const App = () => {
     <Header />
     <Main />
     <CustomersSay />
+    <AboutUs />
     <Footer />
+    <BookingPage/>
     </ChakraProvider>
   )
 }

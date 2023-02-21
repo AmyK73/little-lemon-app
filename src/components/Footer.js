@@ -5,7 +5,7 @@ const Footer = () => {
     return (
     <>
 <HStack
-    bg='yellow'
+    bg='#495E57'
     justifyContent='space-between'
     spacing={8}
     width='100%'
