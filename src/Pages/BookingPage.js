@@ -49,7 +49,7 @@ function BookingPage() {
     });
    };
 
-   const mhandleSubmit = (e) => {
+   const handleSubmit = (e) => {
      e.preventDefault();
      alert("Reserved!");
      clearForm();
@@ -58,7 +58,7 @@ function BookingPage() {
   return (
     <>
     <Box bg='#EDEFEE' width='100%' fontFamily='Karla' fontSize='18px' fontWeight='bold' justifyContent='space-between' px={5} py={10}>
-          <FormControl isRequired onSubmit={mhandleSubmit}>
+          <FormControl isRequired onSubmit={handleSubmit}>
                       <FormLabel htmlFor="firstName">First name</FormLabel>
                       <Input variant='outline' htmlSize={30} width='auto'
                           value={firstName}
@@ -149,7 +149,7 @@ function BookingPage() {
                       </select>
 
 <VStack>
-                      <Button onSubmit={mhandleSubmit} type="submit"
+                      <Button onSubmit={handleSubmit} type="submit"
                       value={makeReservation}
                           onChange={(e) => {
                               setMakeReservation(e.target.value);
