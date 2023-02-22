@@ -154,7 +154,7 @@ function BookingPage() {
                           onChange={(e) => {
                               setMakeReservation(e.target.value);
                           } }
-                      >
+                      > 
             Make Your Reservation
           </Button>
           </VStack>
