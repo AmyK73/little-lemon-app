@@ -1,5 +1,9 @@
 import React from "react";
 import { Box, Text, Button, Image, HStack, Divider } from '@chakra-ui/react';
+import Footer from "./Footer";
+import { Link } from 'react-router-dom';
+import { ReactRouterLink } from 'react';
+
 
 const Main = () => {
     return (
@@ -7,23 +11,23 @@ const Main = () => {
     <>
     <Box bg="#495E57" width='100%' fontFamily='Markazi Text'>
 
-            <Box
+            <Text
                 color='#F4CE14'
                 fontSize='64px'
                 fontWeight='medium'
                 px={5}
-                py={0}>
+                paddingTop={20}>
                 Little Lemon
-            </Box>
+                </Text>
 
-            <Box
+            <Text
                 color='#EDEFEE'
                 fontSize='40px'
                 fontWeight='normal'
                 px={5}
-                paddingBottom={8}>
+                >
                 Chicago
-            </Box>
+            </Text>
 
 
             <Text
@@ -35,21 +39,24 @@ const Main = () => {
                 paddingLeft={5}
                 paddingBottom={10}>
                 We are a family owned Mediterranean restaurant, focused on traditional recipes served with a modern twist.
-            </Text>
 
-            <Box
-                px={5}
-                paddingBottom={10}>
-                <Button
-                    fontFamily='Karla'
-                    fontSize='18px'
-                    fontWeight='medium'
-                    color='#EDEFEE'
-                    bg='#F4CE14'
-                    _hover={{ bg: 'gray' }}>
+
+            <Link as={ReactRouterLink} to="/bookingpage">
+            <Button
+                float="right"
+                marginRight={15}
+                py={5}
+                fontFamily='Karla'
+                fontSize='18px'
+                fontWeight='medium'
+                border="none"
+                color='#EDEFEE'
+                bg='#F4CE14'
+                _hover={{ bg: 'gray' }}>
                     Reserve a Table
-                </Button>
-            </Box>
+            </Button>
+            </Link>
+            </Text>
 
 
         <Box
@@ -67,18 +74,22 @@ const Main = () => {
             </Text>
         </Box>
 
-        <Box>
-            <Button
-                color='#EDEFEE'
-                fontFamily='Karla'
-                fontSize='18px'
-                fontWeight='medium'
-                bg='#F4CE14'
-                float='right'
-                _hover={{ bg: 'gray' }}>
+        <Link as={ReactRouterLink} to="/menu">
+        <Button
+            marginRight={15}
+            py={5}
+            color='#EDEFEE'
+            fontFamily='Karla'
+            fontSize='18px'
+            fontWeight='medium'
+            border="none"
+            bg='#F4CE14'
+            float='right'
+            _hover={{ bg: 'gray' }}>
                 Online Menu
-            </Button>
-        </Box>
+        </Button>
+        </Link>
+
 
 <HStack spacing={25} px={5} py={5} justify='space-between'>
             <Box fontFamily='Karla'
@@ -126,6 +137,8 @@ const Main = () => {
         </Box>
         <Divider orientation='horizontal' variant='solid'/>
 </Box>
+
+<Footer/>
 
                 </>
 

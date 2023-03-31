@@ -1,15 +1,15 @@
- import React from 'react';
- import { Box, HStack, Text } from '@chakra-ui/react';
- import { Image } from '@chakra-ui/react';
- import { BrowserRouter, Link } from 'react-router-dom';
+import React from 'react';
+import { Box, HStack, Text } from '@chakra-ui/react';
+import { Image } from '@chakra-ui/react';
+import { Link, Outlet } from 'react-router-dom';
 import { ReactRouterLink } from 'react';
 
 
-  const Header = () => {
+  const Home = () => {
      return (
          <>
          <nav>
-         <HStack bg='#EDEFEE' spacing={8} width='100%' paddingLeft={10}>
+         <HStack bg='#EDEFEE'>
             <Box>
                 <Image src='https://static.vecteezy.com/system/resources/previews/008/848/358/original/fresh-lemon-fruit-free-png.png' alt='lemon' 
                  width='50px'
@@ -24,26 +24,25 @@ import { ReactRouterLink } from 'react';
 
 
             <HStack
-            spacing={8}
             color='#333333'
             fontFamily='Karla'
             fontSize='24px'
             fontWeight='medium'
-            px={16} >
-            <BrowserRouter>
-                     <Link as={ReactRouterLink} to="/home">Home</Link>
-                     <Link as={ReactRouterLink} to="/about">About</Link>
+            px={16}
+            >
+
+                     <Link as={ReactRouterLink} to="/">Home</Link>
+                     <Link as={ReactRouterLink} to="/aboutus">About</Link>
                      <Link as={ReactRouterLink} to="/menu">Menu</Link>
-                     <Link as={ReactRouterLink} to="/reservations">Reservations</Link>
-                     <Link as={ReactRouterLink} to="/order">Order Online</Link>
-                     <Link as={ReactRouterLink} to="/login">Login</Link>
-                     </BrowserRouter>
+                     <Link as={ReactRouterLink} to="/bookingpage">Reservations</Link>
+                     <Link as={ReactRouterLink} to="/customerssay">Reviews</Link>
             </HStack>
  </HStack>
  </nav>
+<Outlet />
 
  </>
      );
  }
 
-  export default Header;
+  export default Home;

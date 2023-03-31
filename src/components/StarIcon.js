@@ -6,7 +6,7 @@ import { Box } from '@chakra-ui/react';
 const Rating = () => {
     return (
         <>
-        <Box color='yellow.400'>
+        <Box color="#F4CE14">
         <StarIcon  />
         </Box>
 </>
